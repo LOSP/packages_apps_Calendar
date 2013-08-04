@@ -347,7 +347,7 @@ public class AllInOneActivity extends Activity implements EventHandler,
         }
 
         if (viewType == -1) {
-            viewType = Utils.getViewTypeFromIntentAndSharedPref(this);
+            viewType = ViewType.MONTH;
         }
         mTimeZone = Utils.getTimeZone(this, mHomeTimeUpdater);
         Time t = new Time(mTimeZone);
